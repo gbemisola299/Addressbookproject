@@ -11,7 +11,7 @@ pipeline {
         }
 stage('Deploy') {
             steps {
-                sshagent(['98498650-58ad-412f-9ead-78dab64903a8']) {
+                sshagent(['1d24a241-6c3e-44f8-8e8a-01f1ca435584']) {
     sh "scp -o StrictHostKeyChecking=no target/*.war gbemi@54.80.22.185:/home/admin1/tomcat/webapps"
 }
             }
