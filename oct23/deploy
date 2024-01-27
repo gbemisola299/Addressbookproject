@@ -12,7 +12,7 @@ pipeline {
 stage('Deploy') {
             steps {
                 sshagent(['1d24a241-6c3e-44f8-8e8a-01f1ca435584']) {
-    sh "scp -o StrictHostKeyChecking=no target/*.war admin1@54.226.153.78:/home/admin1/tomcat/webapps"
+    sh "scp -o StrictHostKeyChecking=no target/*.war admin1@23.20.227.164:/home/admin1/tomcat/webapps"
 }
             }
         }
